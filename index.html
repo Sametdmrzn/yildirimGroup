@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Test</title>
+    <!-- Tailwind CDN doğru şekilde ekleniyor -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+<header class="relative flex w-full h-24 bg-[url('assets/header/Tepebanner.jpg')] bg-cover bg-center items-center justify-between px-8">
+    <!-- Logo -->
+    <div class="flex items-center">
+        <img src="assets/header/logo.png" alt="Yildirim Group" class="h-16">
+    </div>
+
+    <!-- Hamburger Icon (mobil için) -->
+    <button id="menu-btn" class="text-white md:hidden focus:outline-none z-50">
+        &#9776; <!-- hamburger ikonu -->
+    </button>
+
+    <!-- Menü Penceresi -->
+    <nav id="menu" class="fixed top-0 right-0 h-full w-64 bg-black bg-opacity-90 transform translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:flex md:bg-transparent md:h-auto md:w-auto">
+        <ul class="flex flex-col md:flex-row gap-8 p-8 md:p-0 text-white font-semibold md:text-white">
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">SUBSIDIARIES</a></li>
+            <li><a href="">SUSTAINABILITY</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('translate-x-full'); // menüyü aç/kapat
+});
+</script>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
