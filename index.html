@@ -6,6 +6,9 @@
     <title>Tailwind Test</title>
     <!-- Tailwind CDN doğru şekilde ekleniyor -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body class="">
 <header class="relative flex w-full h-24 bg-[url('assets/header/Tepebanner.jpg')] bg-cover bg-center items-center justify-between px-8">
@@ -23,9 +26,13 @@
 
 <nav id="menu" class="fixed top-0 left-0 h-full w-80 bg-white shadow-lg transform -translate-x-80 transition-transform duration-300
 md:relative md:translate-x-0 md:flex md:items-center md:justify-end md:bg-transparent md:h-20 md:w-full z-40">
-  <ul class="flex flex-col md:flex-row gap-8 p-4 md:p-0 text-[#222222] md:text-black font-semibold text-lg md:text-xl mr-12  mt-4">
-    <li><a href="#" class="hover:text-gray-500 transition-colors">ABOUT US</a></li>
+  <ul style="font-family:'Mulish',sans-serif;"class="flex flex-col md:flex-row gap-5 p-4 md:p-0 text-[#222222] text-[15px] font-medium
+ font-mulish md:text-black mr-12 mt-4">
+    <li><a href="#" class="hover:text-gray-500 transition-colors font-mulish">ABOUT US</a></li>
     <li><a href="#" class="hover:text-gray-500 transition-colors">SUBSIDIARIES</a></li>
+    <li><a href="#" class="hover:text-gray-500 transition-colors">SUSTAINABILITY</a></li>
+    <li><a href="#" class="hover:text-gray-500 transition-colors">SUSTAINABILITY</a></li>
+    <li><a href="#" class="hover:text-gray-500 transition-colors">SUSTAINABILITY</a></li>
     <li><a href="#" class="hover:text-gray-500 transition-colors">SUSTAINABILITY</a></li>
   </ul>
 </nav>
