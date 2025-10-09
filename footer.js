@@ -1,22 +1,65 @@
 // footer.js
 export function loadFooter() {
-  const footerHTML = `
-    <footer class="bg-gray-800 text-white p-6 text-center">
-      <div class='flex w-full bg-black p-4'>
-        <div class='grid grid-cols-1 md:grid-cols-4 gap-8 mb-4'>
-          <div class='col-span-2'>
-            <h3 class='font-bold'>Yıldırım Group</h3>
-            <p class='text-gray-500 leading-relaxed'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue mi et.</p>
-          </div>
-          <div>
-             <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
-              <svg <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1227" viewBox="0 0 1200 1227" fill="none"><g clip-path="url(#clip0_1_2)"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="black"/></g><defs><clipPath id="clip0_1_2"><rect width="1200" height="1227" fill="white"/></clipPath></defs></svg>
-              </svg>
-            </a>
-          </div>
+  const footerHTML = `<footer class="bg-gray-800 text-white text-center">
+  <div class="flex w-full bg-black p-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
+
+      <!-- Kolon 1 -->
+      <div class="col-span-2">
+        <h3 class="font-bold">Yıldırım Group Hakkında</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum hendrerit ligula vel interdum. 
+          Cras consectetur, ipsum a lacinia elementum, dui velit tincidunt tellus, sit amet pretium lectus justo id diam. 
+          Duis at enim ornare massa.
+        </p>
+      </div>
+
+      <!-- Kolon 2 -->
+      <div class="col-span-1">
+        <h3 class="font-bold">Site Haritası</h3>
+        <div class="flex flex-col gap-2 mt-4">
+          <a href="#index.html">HOME</a>
+          <a href="#about.js">ABOUT</a>
+          <a href="#">CONTACT</a>
+          <a href="#">SUBSIDIARIES</a>
         </div>
       </div>
-    </footer>
+
+      <!-- Kolon 3 -->
+      <div class="col-span-1">
+        <h3 class="font-bold">Sosyal Medya Hesaplarımız</h3>
+        <div class="flex gap-4 mt-4 justify-center">
+
+          <!-- Twitter -->
+          <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7 19H4V9h3v10zM5.5 7.7c-1 0-1.8-.8-1.8-1.8S4.5 4 5.5 4s1.8.8 1.8 1.8-.8 1.9-1.8 1.9zM20 19h-3v-5.4c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V19h-3V9h3v1.4c.4-.7 1.3-1.7 3-1.7 2.2 0 3.7 1.5 3.7 4.7V19z" />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.4 1.3.4 2.5.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.3.4-2.5.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.4-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.5s.9-.8 1.5-1c.5-.2 1.3-.4 2.5-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7.1.1 5.8.1 4.7.3 3.8.6 2.9 1 2.1 1.5 1.4 2.2.7 2.9.2 3.7-.1 4.6c-.3.9-.5 2-.5 3.3C-.7 8.3-.7 8.7-.7 12s0 3.7.1 4.9c.1 1.3.3 2.4.6 3.3.4.9.9 1.7 1.6 2.4.7.7 1.5 1.2 2.4 1.6.9.3 2 .5 3.3.6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.4-.3 3.3-.6.9-.4 1.7-.9 2.4-1.6.7-.7 1.2-1.5 1.6-2.4.3-.9.5-2 .6-3.3.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.4-.6-3.3-.4-.9-.9-1.7-1.6-2.4-.7-.7-1.5-1.2-2.4-1.6-.9-.3-2-.5-3.3-.6C15.7 0 15.3 0 12 0z" /> <path d="M12 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM18.4 4.6a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" />
+            </svg>
+          </a>
+        </div>
+
+        <p class="text-white mt-3 text-sm">
+          Ziyaret etmek için tıklayınız
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
   `;
   document.body.insertAdjacentHTML('beforeend', footerHTML);
 
