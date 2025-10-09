@@ -1,7 +1,7 @@
 // header.js
 export function loadHeader() {
     const headerHTML = `
-    <header class="relative flex w-full h-24 bg-[url('assets/header/Tepebanner.jpg')] bg-cover bg-center items-center justify-between px-8">
+    <header id='header' class="relative flex w-full h-24 bg-[url('assets/header/Tepebanner.jpg')] bg-cover bg-center items-center justify-between px-8">
       <div class="flex items-center">
         <img src="assets/header/logo.png" alt="Yildirim Group" class="h-16">
       </div>
