@@ -1,36 +1,27 @@
 // header.js
 export function loadHeader() {
   const headerHTML = `
-<header id="header" class="relative flex w-full h-24 bg-[url('assets/images/header/Tepebanner.jpg')] bg-cover bg-center items-center justify-between px-8">
-  <div class="flex items-center"> 
-    <img src="assets/images/header/logo.png" alt="Yildirim Group" class="h-16">
-  </div>
-
-  <button id="menu-btn" class="text-white md:hidden focus:outline-none z-50 text-3xl">&#9776;</button>
-
-  <nav id="menu" class="fixed top-0 left-0 h-full w-80 bg-white shadow-lg transform -translate-x-80 transition-transform duration-300
-    md:relative md:translate-x-0 md:flex md:items-center md:justify-end md:bg-transparent md:h-20 md:w-full z-40">
-    <ul style="font-family:'Mulish',sans-serif;" class="flex flex-col md:flex-row gap-5 p-4 md:p-0 text-[#222222] text-[15px] font-medium font-mulish text-black md:text-white mr-12 mt-4">
-      <li class="flex">
-        <a href="#" class="hover:text-gray-500 transition-colors font-mulish">ABOUT US</a>
-        <svg class="w-5 h-5 ml-2 transition-transform duration-300 md:hidden" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
-        </svg>
-      </li>
-      <li class='flex'>
-        <a href="#" class="hover:text-gray-500 transition-colors">SUBSIDIARIES</a>
-                <svg class="w-5 h-5 ml-2 transition-transform duration-300 md:hidden" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
-        </svg>
-      </li>
-      <li class='flex'>
-        <a href="#" class="hover:text-gray-500 transition-colors">SUSTAINABILITY</a>
-                <svg class="w-5 h-5 ml-2 transition-transform duration-300 md:hidden" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
-        </svg>
-      </li>
+<header id="header" class="relative flex w-full h-[650px] bg-[#040a31] bg-cover bg-center items-start justify-between px-4 md:px-0" 
+style="background-image: url('assets/header.png');">
+    <!-- Logo - Solda -->
+    <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
+        <img src="assets/logo.png" alt="Yildirim Group" class="h-14 w-auto">
+    </div>
+    
+<!-- Navigasyon - Desktop Optimized -->
+<nav id="menu" class="flex items-center justify-end bg-transparent h-20 w-auto mr-4 md:mr-8 lg:mr-12">
+    <ul class="flex flex-row text-[#16509f] text-xs md:text-sm lg:text-base font-medium gap-1 md:gap-2">
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">ANA SAYFA</a>
+        </li>
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">HAKKIMIZDA</a>
+        </li>
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">İLETİŞİM</a>
+        </li>
     </ul>
-  </nav>
+</nav>
 </header>
 
 
