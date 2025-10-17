@@ -1,58 +1,33 @@
 export function loadworkUs() {
     const workUsHTML = `
-<div class=" w-full bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-3xl hover:-translate-y-2">
-        <!-- Başlık Bölümü -->
-        <div class="bg-gradient-to-r from-blue-900 to-red-800 text-white py-8 px-6 text-center relative">
-            <div class="absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-500 to-red-700"></div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-3">Haydi,</h1>
-            <p class="text-3xl md:text-4xl font-semibold">**Baslayalım**</p>
-        </div>
-        
-        <!-- İçerik Bölümü -->
-        <div class="py-10 px-6 md:px-10 text-center">
-            <div class="flex justify-center mb-6">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-red-800 rounded-full flex items-center justify-center">
-                    <i class="fas fa-rocket text-white text-2xl"></i>
-                </div>
-            </div>
-            
-            <p class="text-gray-700 text-lg mb-8 max-w-md mx-auto">
-                Yeni projenize başlamak için doğru adrestesiniz. Profesyonel ekibimizle ihtiyaçlarınızı karşılamak için buradayız.
-            </p>
-            
-            <!-- E-posta Bölümü -->
-            <div class="mt-8 p-6 bg-gray-50 rounded-xl border-l-4 border-blue-900 transition-all duration-300 hover:bg-gray-100 hover:scale-[1.02] max-w-md mx-auto">
-                <div class="flex items-center justify-center space-x-3">
-                    <i class="fas fa-envelope text-blue-900 text-xl"></i>
-                    <a href="mailto:info@yildirimgroup.site" class="text-xl md:text-2xl text-blue-900 font-medium hover:text-red-700 transition-colors duration-300">
-                        info@yildirimgroup.site
-                    </a>
-                </div>
-                <p class="text-gray-600 mt-3 text-sm">Bizimle iletişime geçmekten çekinmeyin</p>
-            </div>
-            
-            <!-- Sosyal Medya İkonları -->
-            <div class="flex justify-center space-x-5 mt-10">
-                <a href="#" class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center text-white hover:bg-blue-800 transition-colors duration-300">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-colors duration-300">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors duration-300">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-        </div>
-        
-        <!-- Alt Bilgi -->
-        <div class="bg-gray-100 py-4 text-center text-gray-600 text-sm">
-            <p>© 2023 Yıldırım Group. Tüm hakları saklıdır.</p>
-        </div>
+<header id="header" class="relative flex w-full h-[650px] bg-[#040a31] bg-cover bg-center items-start justify-between px-4 md:px-0" 
+style="background-image: url('assets/images/header/headerbg.png');">
+    <!-- Logo - Solda -->
+    <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
+        <img src="" alt="Yildirim Group" class="h-14 w-auto">
     </div>
+    
+<!-- Navigasyon - Desktop Optimized -->
+<nav id="menu" class="flex items-center justify-end bg-transparent h-20 w-auto mr-4 md:mr-8 lg:mr-12">
+    <ul class="flex flex-row text-[#16509f] text-xs md:text-sm lg:text-base font-medium gap-1 md:gap-2">
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">ANA SAYFA</a>
+        </li>
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">HAKKIMIZDA</a>
+        </li>
+        <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
+            <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">İLETİŞİM</a>
+        </li>
+    </ul>
+    <div class="explore">
+        <button class="bg-[#ffcc00] text-black font-semibold py-2 px-4 rounded-md hover:bg-yellow-400 transition-colors duration-300">
+            Bize Katılın
+        </button>
+    </div>
+    
+</nav>
+</header>
     `
     document.body.insertAdjacentHTML('beforeend', workUsHTML);
 }

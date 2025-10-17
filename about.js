@@ -1,6 +1,6 @@
 export function loadAbout() {
     const aboutHTML = `
-<div class="flex flex-col md:flex-row bg-gradient-to-br from-blue-50 to-indigo-50 p-6 md:p-10 gap-8 md:gap-12 rounded-2xl shadow-lg">
+<div id="about" class="flex flex-col md:flex-row bg-gradient-to-br from-blue-50 to-indigo-50 p-6 md:p-10 gap-8 md:gap-12 rounded-2xl shadow-lg">
     <!-- Sol taraf: Metin -->
     <div class="flex flex-col md:w-1/2 space-y-6">
         <div class="space-y-2">
