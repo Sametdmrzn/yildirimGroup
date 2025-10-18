@@ -1,33 +1,6 @@
 // footer.js
 export function loadFooter() {
   const footerHTML = `
-<!-- Social Media Section - Footer Öncesi -->
-<section class="bg-white py-12 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Bizi Takip Edin</h3>
-                <p class="text-gray-600">Yeniliklerden haberdar olmak için sosyal medya hesaplarımızı takip edin</p>
-            </div>
-            
-            <div class="flex gap-4">
-                <a href="#" class="group w-12 h-12 bg-gray-100 hover:bg-[#0077B5] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-linkedin text-xl text-gray-600 group-hover:text-white transition-colors"></i>
-                </a>
-                <a href="#" class="group w-12 h-12 bg-gray-100 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-instagram text-xl text-gray-600 group-hover:text-white transition-colors"></i>
-                </a>
-                <a href="#" class="group w-12 h-12 bg-gray-100 hover:bg-[#1DA1F2] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-twitter text-xl text-gray-600 group-hover:text-white transition-colors"></i>
-                </a>
-                <a href="#" class="group w-12 h-12 bg-gray-100 hover:bg-[#FF0000] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-youtube text-xl text-gray-600 group-hover:text-white transition-colors"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer class="bg-[#0a2540] text-white">
     <div class="max-w-7xl mx-auto px-6 md:px-12 py-12">

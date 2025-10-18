@@ -4,28 +4,28 @@ export function loadHeader() {
 <header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0" 
 style="background-image: url('assets/images/header/headerbg.png');">
     
-    <!-- Üst Satır: Logo ve Navigasyon -->
-    <div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
-        <!-- Logo - Solda -->
-        <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
-            <img src="" alt="Yildirim Group" class="h-14 w-auto">
-        </div>
-        
-        <!-- Navigasyon - Desktop Optimized -->
-        <nav id="menu" class="flex items-center justify-end bg-transparent h-20 w-auto mr-4 md:mr-8 lg:mr-12">
-            <ul class="flex flex-row text-[#16509f] text-xs md:text-sm lg:text-base font-medium gap-1 md:gap-2">
-                <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">ANA SAYFA</a>
-                </li>
-                <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">HAKKIMIZDA</a>
-                </li>
-                <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-3 md:p-4 lg:p-5 min-w-[88px] md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">İLETİŞİM</a>
-                </li>
-            </ul>
-        </nav>
+<!-- Üst Satır: Logo ve Navigasyon -->
+<div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
+    <!-- Logo - Solda -->
+    <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
+        <img src="assets/logo.png" alt="Yildirim Group" class="h-14 w-auto transition-all duration-500">
     </div>
+    
+    <!-- Navigasyon - Desktop Optimized -->
+    <nav id="menu" class="flex items-center justify-end bg-transparent h-20 w-auto mr-2 md:mr-8 lg:mr-12">
+        <ul class="flex flex-row text-[#16509f] text-[10px] md:text-sm lg:text-base font-medium gap-0.5 md:gap-2">
+            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
+                <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">ANA SAYFA</a>
+            </li>
+            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
+                <a href="#about" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">HAKKIMIZDA</a>
+            </li>
+            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
+                <a href="#contact" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">İLETİŞİM</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- Bizi Keşfedin Butonu - En Alt Sol -->
 <div class="absolute bottom-0 left-0 w-full md:w-auto">
