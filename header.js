@@ -4,42 +4,49 @@ export function loadHeader() {
 <header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0" 
 style="background-image: url('assets/images/header/headerbg.png');">
     
-<!-- Üst Satır: Logo ve Navigasyon -->
-<div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
-    <!-- Logo - Solda -->
-    <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
-        <img src="assets/logo.png" alt="Yildirim Group" class="h-14 w-auto transition-all duration-500">
-    </div>
-    
-    <!-- Navigasyon - Desktop Optimized -->
-    <nav id="menu" class="flex items-center justify-end bg-transparent h-20 w-auto mr-2 md:mr-8 lg:mr-12">
-        <ul class="flex flex-row text-[#16509f] text-[10px] md:text-sm lg:text-base font-medium gap-0.5 md:gap-2">
-            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
-                <a href="#" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">ANA SAYFA</a>
-            </li>
-            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
-                <a href="#about" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">HAKKIMIZDA</a>
-            </li>
-            <li class="flex items-center justify-center bg-white transition-all duration-300 hover:bg-gray-200 hover:shadow-md p-2 md:p-4 lg:p-5 min-w-[70px] md:min-w-[120px] lg:min-w-[140px]">
-                <a href="#contact" class="hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide">İLETİŞİM</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-<!-- Bizi Keşfedin Butonu - En Alt Sol -->
-<div class="absolute bottom-0 left-0 w-full md:w-auto">
-    <button id="discoverBtn" class="flex items-center justify-between bg-[#27293d] w-full md:w-[400px] lg:w-[600px] text-white font-semibold px-6 md:px-8 py-4 md:py-6 transition-all duration-300 hover:shadow-xl md:hover:scale-105 group">
-        <span href="#" class="text-sm md:text-base lg:text-lg tracking-wide">BİZİ KEŞFEDİN</span>
-        <div class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full transition-transform duration-300 group-hover:translate-x-2">
-            <i class="fa fa-angle-right text-black text-base md:text-lg"></i>
+    <!-- Üst Satır: Logo ve Navigasyon -->
+    <div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
+        <!-- Logo - Solda -->
+        <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
+            <img src="assets/logo.png" alt="Yildirim Group" class="h-14 w-auto transition-all duration-500">
         </div>
-    </button>
-</div>
+        
+        <!-- Hamburger Menu Button - Mobile Only -->
+        <button id="menuToggle" class="md:hidden mr-4 z-50 w-10 h-10 flex flex-col items-center justify-center gap-1.5 relative">
+            <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+        </button>
+        
+        <!-- Navigasyon - Desktop & Mobile -->
+        <nav id="menu" class="fixed md:static top-0 right-0 h-screen md:h-20 w-72 md:w-auto bg-[#0a2540]/95 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 md:mr-8 lg:mr-12 shadow-2xl md:shadow-none">
+            <ul class="flex flex-col md:flex-row text-white md:text-[#16509f] text-base md:text-sm lg:text-base font-medium gap-0 md:gap-2 pt-24 md:pt-0 px-4 md:px-0">
+                <li class="flex items-center justify-start md:justify-center md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 p-4 md:p-4 lg:p-5 md:min-w-[120px] lg:min-w-[140px]">
+                    <a href="#" class="hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full md:w-auto">ANA SAYFA</a>
+                </li>
+                <li class="flex items-center justify-start md:justify-center md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 p-4 md:p-4 lg:p-5 md:min-w-[120px] lg:min-w-[140px]">
+                    <a href="#about" class="hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full md:w-auto">HAKKIMIZDA</a>
+                </li>
+                <li class="flex items-center justify-start md:justify-center md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 p-4 md:p-4 lg:p-5 md:min-w-[120px] lg:min-w-[140px]">
+                    <a href="#contact" class="hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full md:w-auto">İLETİŞİM</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Overlay - Mobile Menu Açıkken -->
+        <div id="menuOverlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-30 md:hidden"></div>
+    </div>
+
+    <!-- Bizi Keşfedin Butonu - En Alt Sol -->
+    <div class="absolute bottom-0 left-0 w-full md:w-auto">
+        <button id="discoverBtn" class="flex items-center justify-between bg-[#27293d] w-full md:w-[400px] lg:w-[600px] text-white font-semibold px-6 md:px-8 py-4 md:py-6 transition-all duration-300 hover:shadow-xl md:hover:scale-105 group">
+            <span class="text-sm md:text-base lg:text-lg tracking-wide">BİZİ KEŞFEDİN</span>
+            <div class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full transition-transform duration-300 group-hover:translate-x-2">
+                <i class="fa fa-angle-right text-black text-base md:text-lg"></i>
+            </div>
+        </button>
+    </div>
 </header>
-
-
-
 
   `;
 
