@@ -5,7 +5,7 @@ export function loadHeader() {
 style="background-image: url('assets/images/header/headerbg.png');">
     
     <!-- Üst Satır: Logo ve Navigasyon -->
-    <div class="flex w-full items-center justify-between">
+    <div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
         <!-- Logo - Solda -->
         <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
             <img src="" alt="Yildirim Group" class="h-14 w-auto">
@@ -42,16 +42,73 @@ style="background-image: url('assets/images/header/headerbg.png');">
 
 
   `;
+
   document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
-  document.getElementById('discoverBtn').addEventListener('click', () => {
+document.getElementById('discoverBtn').addEventListener('click', () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
-      aboutSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+        const offset = 96; // 96 pixel yukarıda dur
+        const targetPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     }
-  });
+});
+let lastScrollY = window.pageYOffset;
+const navbar = document.getElementById('navbar');
+const header = document.getElementById('header');
+const scrollThreshold = 10; // Kaç pixel scroll'dan sonra sticky olacak
+
+window.addEventListener('scroll', function() {
+    const currentScrollY = window.pageYOffset;
+    
+    if (currentScrollY > scrollThreshold) {
+        // Navbar'ı sticky yap
+        if (!navbar.classList.contains('navbar-fixed')) {
+            navbar.classList.add('navbar-fixed');
+            navbar.style.position = 'fixed';
+            navbar.style.top = '0';
+            navbar.style.left = '0';
+            navbar.style.right = '0';
+            navbar.style.zIndex = '1000';
+            navbar.style.backgroundColor = 'rgba(4, 10, 49, 0.95)';
+            navbar.style.backdropFilter = 'blur(10px)';
+            navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            navbar.style.padding = '0.5rem 1rem';
+            
+            // Logo küçült
+            const logo = navbar.querySelector('img');
+            if (logo) {
+                logo.style.height = '2.5rem'; // h-10
+            }
+        }
+    } else {
+        // Navbar'ı normale döndür
+        if (navbar.classList.contains('navbar-fixed')) {
+            navbar.classList.remove('navbar-fixed');
+            navbar.style.position = '';
+            navbar.style.top = '';
+            navbar.style.left = '';
+            navbar.style.right = '';
+            navbar.style.zIndex = '';
+            navbar.style.backgroundColor = '';
+            navbar.style.backdropFilter = '';
+            navbar.style.boxShadow = '';
+            navbar.style.padding = '';
+            
+            // Logo normal boyut
+            const logo = navbar.querySelector('img');
+            if (logo) {
+                logo.style.height = '3.5rem'; // h-14
+            }
+        }
+    }
+    
+    lastScrollY = currentScrollY;
+});
+
 
 }
