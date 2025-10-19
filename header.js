@@ -1,7 +1,7 @@
 // header.js
 export function loadHeader() {
    const headerHTML = `
-<header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0" 
+<header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0  scroll-mt-20 md:scroll-mt-24" 
 style="background-image: url('relaseassets/bg.jpg');">
     
     <!-- Üst Satır: Logo ve Navigasyon -->

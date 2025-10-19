@@ -1,6 +1,6 @@
 export function loadAbout() {
     const aboutHTML = `
-<section id="about" class="py-16 md:py-24 bg-gray-100 relative">
+<section id="about" class="py-16 md:py-24 bg-gray-100 relative scroll-mt-20 md:scroll-mt-24">
     <!-- Sol Kenar Resmi -->
     <div class="absolute left-0 top-0 bottom-0 w-28 md:w-36 lg:w-44 xl:w-48 hidden lg:block">
         <div class="ml-4 h-full">

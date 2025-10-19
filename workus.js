@@ -1,6 +1,6 @@
 export function loadworkUs() {
   const workUsHTML = `
-<section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden">
+<section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
 
     <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
