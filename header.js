@@ -1,15 +1,17 @@
 // header.js
 export function loadHeader() {
-  const headerHTML = `
+   const headerHTML = `
 <header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0" 
-style="background-image: url('assets/images/header/headerbg.png');">
+style="background-image: url('relaseassets/bg.jpg');">
     
     <!-- Üst Satır: Logo ve Navigasyon -->
     <div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out">
-        <!-- Logo - Solda -->
-        <div class="flex h-[80px] items-center md:ml-[200px] ml-4"> 
-            <img src="assets/logo.png" alt="Yildirim Group" class="h-14 w-auto transition-all duration-500">
-        </div>
+<!-- Logo - Solda -->
+<div class="flex h-[100px] items-center md:ml-[200px] ml-4"> 
+    <img src="assets/reallogo.png" 
+        alt="Yildirim Group" 
+        class="h-28 md:h-32 lg:h-36 w-auto">
+</div>
         
         <!-- Hamburger Menu Button - Mobile Only -->
         <button id="menuToggle" class="md:hidden mr-4 z-50 w-10 h-10 flex flex-col items-center justify-center gap-1.5 relative">
@@ -51,7 +53,7 @@ style="background-image: url('assets/images/header/headerbg.png');">
     </div>
 
     <!-- Bizi Keşfedin Butonu - En Alt Sol -->
-    <div class="absolute bottom-0 left-0 w-full md:w-auto">
+    <div class="absolute bottom-0 right-0 w-full md:w-auto">
         <button id="discoverBtn" class="flex items-center justify-between bg-[#27293d] w-full md:w-[400px] lg:w-[600px] text-white font-bold px-6 md:px-8 py-4 md:py-6 transition-all duration-300 hover:shadow-xl md:hover:scale-105 group">
             <span class="text-sm md:text-base lg:text-lg tracking-wide">BİZİ KEŞFEDİN</span>
             <div class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full transition-transform duration-300 group-hover:translate-x-2">
@@ -77,9 +79,8 @@ document.getElementById('discoverBtn').addEventListener('click', () => {
         });
     }
 });
-let lastScrollY = window.pageYOffset;
+
 const navbar = document.getElementById('navbar');
-const header = document.getElementById('header');
 const scrollThreshold = 10; // Kaç pixel scroll'dan sonra sticky olacak
 
 window.addEventListener('scroll', function() {
@@ -97,13 +98,6 @@ window.addEventListener('scroll', function() {
             navbar.style.backgroundColor = 'rgba(4, 10, 49, 0.95)';
             navbar.style.backdropFilter = 'blur(10px)';
             navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-            navbar.style.padding = '0.5rem 1rem';
-            
-            // Logo küçült
-            const logo = navbar.querySelector('img');
-            if (logo) {
-                logo.style.height = '2.5rem'; // h-10
-            }
         }
     } else {
         // Navbar'ı normale döndür
@@ -117,18 +111,7 @@ window.addEventListener('scroll', function() {
             navbar.style.backgroundColor = '';
             navbar.style.backdropFilter = '';
             navbar.style.boxShadow = '';
-            navbar.style.padding = '';
-            
-            // Logo normal boyut
-            const logo = navbar.querySelector('img');
-            if (logo) {
-                logo.style.height = '3.5rem'; // h-14
-            }
         }
     }
-    
-    lastScrollY = currentScrollY;
 });
-
-
 }

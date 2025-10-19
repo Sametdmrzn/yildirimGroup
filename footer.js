@@ -2,7 +2,7 @@
 export function loadFooter() {
   const footerHTML = `
 <!-- Footer -->
-<footer class="bg-[#0a2540] text-white">
+<footer class="bg-gradient-to-b from-[#1E293B] via-[#0F172A] to-[#020617] text-white">
     <div class="max-w-7xl mx-auto px-6 md:px-12 py-12">
         
         <!-- Main Footer Content -->
@@ -49,12 +49,6 @@ export function loadFooter() {
             <div>
                 <h4 class="text-lg font-semibold mb-4">İletişim</h4>
                 <ul class="space-y-4">
-                    <li>
-                        <a href="tel:+905319006605" class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3">
-                            <i class="fas fa-phone text-blue-400"></i>
-                            <span>+90 (531) 900 66 05</span>
-                        </a>
-                    </li>
                     <li>
                         <a href="mailto:info@yildirimgroup.site" class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3">
                             <i class="fas fa-envelope text-blue-400"></i>

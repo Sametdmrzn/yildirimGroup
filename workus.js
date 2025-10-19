@@ -1,10 +1,6 @@
 export function loadworkUs() {
   const workUsHTML = `
 <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] relative overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-5">
-        <div class="absolute inset-0" style="background-image: linear-gradient(30deg, #2563EB 12%, transparent 12.5%, transparent 87%, #2563EB 87.5%, #2563EB), linear-gradient(150deg, #2563EB 12%, transparent 12.5%, transparent 87%, #2563EB 87.5%, #2563EB), linear-gradient(30deg, #2563EB 12%, transparent 12.5%, transparent 87%, #2563EB 87.5%, #2563EB), linear-gradient(150deg, #2563EB 12%, transparent 12.5%, transparent 87%, #2563EB 87.5%, #2563EB); background-size: 80px 140px; background-position: 0 0, 0 0, 40px 70px, 40px 70px;"></div>
-    </div>
 
     <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
@@ -101,7 +97,7 @@ export function loadworkUs() {
                            class="group bg-gradient-to-r from-[#2563EB] to-[#1E40AF] hover:from-[#1D4ED8] hover:to-[#1E3A8A] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 flex items-center gap-3">
                             <i class="fas fa-envelope text-xl"></i>
                             <div class="text-left">
-                                <div class="text-xs opacity-80">Email Gönder</div>
+                                <div class="text-xs opacity-80">Email Gönder</div>  
                                 <div class="text-sm font-bold">info@yildirimgroup.site</div>
                             </div>
                             <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
@@ -116,9 +112,6 @@ export function loadworkUs() {
                                 </a>
                                 <a href="#" class="w-12 h-12 bg-white/10 hover:bg-[#2563EB]/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-white hover:text-[#2563EB] transition-all duration-300 hover:scale-110 border border-white/10">
                                     <i class="fab fa-instagram text-xl"></i>
-                                </a>
-                                <a href="#" class="w-12 h-12 bg-white/10 hover:bg-[#2563EB]/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-white hover:text-[#2563EB] transition-all duration-300 hover:scale-110 border border-white/10">
-                                    <i class="fab fa-twitter text-xl"></i>
                                 </a>
                             </div>
                         </div>
