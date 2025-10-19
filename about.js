@@ -10,7 +10,7 @@ export function loadAbout() {
             <div class="space-y-8">
                 <!-- Title -->
                 <div>
-                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 leading-tight mb-4">
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-gray-900 leading-tight mb-4">
                         Yıldırım Group<br>Hakkında
                     </h2>
                     <div class="h-1 w-32 bg-cyan-400"></div>
@@ -18,23 +18,23 @@ export function loadAbout() {
 
                 <!-- Description -->
                 <div class="space-y-6">
-                    <p class="text-gray-800 text-base md:text-lg leading-relaxed">
+                    <p class="text-gray-800 text-base md:text-lg leading-relaxed font-normal">
                         Yıldırım Group Aracılık ve Tedarik Şirketi olarak, sektördeki öncü konumumuzu sağlamlaştırmak ve müşterilerimize en kaliteli hizmeti sunmak amacıyla bu ön yazıyı hazırlamış bulunmaktayız. Firmamız, yılların getirdiği tecrübeyle birlikte güvenilir ve yenilikçi çözümler sunarak, iş ortaklarımızın beklentilerini daima en üst seviyede karşılamayı hedeflemektedir.
                     </p>
 
                     <div class="pt-4">
-                        <p class="text-gray-800 text-base leading-relaxed mb-6">
+                        <p class="text-gray-800 text-base leading-relaxed mb-6 font-normal">
                             Yıldırım Group olarak, geniş bir yelpazede aracılık ve tedarik hizmetleri sunuyoruz. Başlıca hizmet alanlarımız şunlardır:
                         </p>
 
                         <ul class="space-y-5">
-                            <li class="text-gray-800">
+                            <li class="text-gray-800 font-normal">
                                 <strong class="font-semibold text-gray-900">Aracılık Hizmetleri:</strong> İş ortaklarımızın ihtiyaç duyduğu ürün ve hizmetlerin en uygun şartlarda temin edilmesi için profesyonel aracılık çözümleri sunmaktayız.
                             </li>
-                            <li class="text-gray-800">
+                            <li class="text-gray-800 font-normal">
                                 <strong class="font-semibold text-gray-900">Tedarik Zinciri Yönetimi:</strong> Tedarik zincirinin her aşamasında etkin çözümler sunarak, maliyetlerinizi düşürmenize ve operasyonel verimliliğinizi artırmanıza yardımcı oluyoruz.
                             </li>
-                            <li class="text-gray-800">
+                            <li class="text-gray-800 font-normal">
                                 <strong class="font-semibold text-gray-900">Danışmanlık Hizmetleri:</strong> Pazar analizleri, stratejik planlama ve süreç iyileştirme konularında uzman ekibimizle yanınızdayız.
                             </li>
                         </ul>

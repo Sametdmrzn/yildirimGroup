@@ -25,7 +25,7 @@ export function loadFooter() {
                 <h4 class="text-lg font-semibold mb-4">Hızlı Erişim</h4>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-2">
+                        <a href="#header" id='homePageDirection' class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-2">
                             <i class="fas fa-chevron-right text-xs"></i>
                             Ana Sayfa
                         </a>
@@ -50,9 +50,9 @@ export function loadFooter() {
                 <h4 class="text-lg font-semibold mb-4">İletişim</h4>
                 <ul class="space-y-4">
                     <li>
-                        <a href="tel:+902121234567" class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3">
+                        <a href="tel:+905319006605" class="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3">
                             <i class="fas fa-phone text-blue-400"></i>
-                            <span>+90 (212) 123 45 67</span>
+                            <span>+90 (531) 900 66 05</span>
                         </a>
                     </li>
                     <li>
@@ -77,5 +77,22 @@ export function loadFooter() {
 </footer>
   `;
   document.body.insertAdjacentHTML('beforeend', footerHTML);
+
+  // Tüm # ile başlayan linkleri seç
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
 
 }
