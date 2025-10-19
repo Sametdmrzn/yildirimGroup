@@ -30,9 +30,7 @@ export function loadworkUs() {
                          alt="İş Görüşmesi">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/60 to-transparent"></div>
                 </div>
-                <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-[#2563EB] to-[#1E40AF] rounded-2xl flex items-center justify-center shadow-2xl">
-                    <i class="fas fa-handshake text-white text-3xl"></i>
-                </div>
+
             </div>
 
             <!-- Right: Content -->
