@@ -93,15 +93,15 @@ export function loadworkUs() {
                     <!-- Right: Actions -->
                     <div class="flex flex-col sm:flex-row items-center gap-4">
                         <!-- Email Button -->
-                        <a href="mailto:info@yildirimgroup.site?subject=Kariyer%20Fırsatları&body=Merhaba,%0D%0A%0D%0AYıldırım%20Group'ta%20çalışma%20fırsatları%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAdım%20Soyadım:%0D%0ATelefon:%0D%0A%0D%0ATeşekkürler." 
-                           class="group bg-gradient-to-r from-[#2563EB] to-[#1E40AF] hover:from-[#1D4ED8] hover:to-[#1E3A8A] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 flex items-center gap-3">
-                            <i class="fas fa-envelope text-xl"></i>
-                            <div class="text-left">
-                                <div class="text-xs opacity-80">Email Gönder</div>  
-                                <div class="text-sm font-bold">info@yildirimgroup.site</div>
-                            </div>
-                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                        </a>
+                            <a href="mailto:info@yildirimgroup.site?subject=Yıldırım%20Group%20İletişim&body=Merhaba,%0D%0A%0D%0AYıldırım%20Group%20ile%20çalışma%20fırsatları%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAdım%20Soyadım:%0D%0ATelefon:%0D%0A%0D%0ATeşekkürler." 
+                            class="group bg-gradient-to-r from-[#2563EB] to-[#1E40AF] hover:from-[#1D4ED8] hover:to-[#1E3A8A] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 flex items-center gap-3">
+                                <i class="fas fa-envelope text-xl"></i>
+                                <div class="text-left">
+                                    <div class="text-xs opacity-80">Email Gönder</div>  
+                                    <div class="text-sm font-bold">info@yildirimgroup.site</div>
+                                </div>
+                                <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                            </a>
 
                         <!-- Social Media -->
                         <div class="flex items-center gap-3">
