@@ -20,32 +20,51 @@ style="background-image: url('relaseassets/bg.jpg');">
             <span class="hamburger-line w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
         </button>
         
-        <nav id="menu" class="fixed md:static top-0 right-0 h-screen md:h-20 w-72 md:w-auto bg-[#0a2540]/95 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 md:mr-8 lg:mr-12 shadow-2xl md:shadow-none">
-            <ul class="flex flex-col md:flex-row text-white md:text-[#16509f] text-base md:text-sm lg:text-base font-medium gap-0 md:gap-2 pt-24 md:pt-0 px-4 md:px-0 mt-2">
-                
-                <!-- Ana Sayfa -->
-                <li class="md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#header" class="flex items-center justify-start md:justify-center hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full p-4 md:p-4 lg:p-5">
-                        ANA SAYFA
-                    </a>
-                </li>
-                
-                <!-- Hakkımızda -->
-                <li class="md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#about" class="flex items-center justify-start md:justify-center hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full p-4 md:p-4 lg:p-5">
-                        HAKKIMIZDA
-                    </a>
-                </li>
-                
-                <!-- İletişim -->
-                <li class="md:bg-white transition-all duration-300 hover:bg-white/10 md:hover:bg-gray-200 md:hover:shadow-md border-b border-white/10 md:border-0 md:min-w-[120px] lg:min-w-[140px]">
-                    <a href="#contact" class="flex items-center justify-start md:justify-center hover:text-blue-300 md:hover:text-gray-600 transition-colors whitespace-nowrap tracking-wide w-full p-4 md:p-4 lg:p-5">
-                        İLETİŞİM
-                    </a>
-                </li>
-                
-            </ul>
-        </nav>
+<nav id="menu" class="fixed md:static top-0 right-0 h-screen md:h-auto w-80 md:w-auto bg-white md:bg-transparent transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 md:mr-8 lg:mr-12 shadow-2xl md:shadow-none">
+    <ul class="flex flex-col md:flex-row items-stretch md:items-center gap-0 md:gap-1 text-[#1e293b] text-base md:text-sm lg:text-base font-medium pt-24 md:pt-0 px-0 md:px-0">
+        
+        <!-- Ana Sayfa -->
+        <li class="relative group">
+            <a href="#header" class="flex items-center justify-start md:justify-center gap-3 px-8 py-5 md:px-6 md:py-4 lg:px-8 lg:py-4 transition-all duration-300 border-l-4 md:border-l-0 md:border-b-2 border-transparent hover:border-[#2563eb] hover:bg-gray-50 md:hover:bg-transparent relative">
+                <i class="fas fa-home text-lg text-[#2563eb] md:hidden"></i>
+                <span class="font-semibold tracking-wide">Ana Sayfa</span>
+                <!-- Desktop hover indicator -->
+                <div class="hidden md:block absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563eb] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </a>
+        </li>
+        
+        <!-- Hakkımızda -->
+        <li class="relative group border-t border-gray-100 md:border-0">
+            <a href="#about" class="flex items-center justify-start md:justify-center gap-3 px-8 py-5 md:px-6 md:py-4 lg:px-8 lg:py-4 transition-all duration-300 border-l-4 md:border-l-0 md:border-b-2 border-transparent hover:border-[#2563eb] hover:bg-gray-50 md:hover:bg-transparent relative">
+                <i class="fas fa-building text-lg text-[#2563eb] md:hidden"></i>
+                <span class="font-semibold tracking-wide">Hakkımızda</span>
+                <!-- Desktop hover indicator -->
+                <div class="hidden md:block absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563eb] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </a>
+        </li>
+        
+        <!-- Hizmetlerimiz -->
+        <li class="relative group border-t border-gray-100 md:border-0">
+            <a href="#services" class="flex items-center justify-start md:justify-center gap-3 px-8 py-5 md:px-6 md:py-4 lg:px-8 lg:py-4 transition-all duration-300 border-l-4 md:border-l-0 md:border-b-2 border-transparent hover:border-[#2563eb] hover:bg-gray-50 md:hover:bg-transparent relative">
+                <i class="fas fa-briefcase text-lg text-[#2563eb] md:hidden"></i>
+                <span class="font-semibold tracking-wide">Hizmetlerimiz</span>
+                <!-- Desktop hover indicator -->
+                <div class="hidden md:block absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563eb] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </a>
+        </li>
+        
+        <!-- İletişim -->
+        <li class="relative group border-t border-gray-100 md:border-0">
+            <a href="#contact" class="flex items-center justify-start md:justify-center gap-3 px-8 py-5 md:px-6 md:py-4 lg:px-8 lg:py-4 transition-all duration-300 border-l-4 md:border-l-0 md:border-b-2 border-transparent hover:border-[#2563eb] hover:bg-gray-50 md:hover:bg-transparent relative">
+                <i class="fas fa-envelope text-lg text-[#2563eb] md:hidden"></i>
+                <span class="font-semibold tracking-wide">İletişim</span>
+                <!-- Desktop hover indicator -->
+                <div class="hidden md:block absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563eb] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
 
 
         <!-- Overlay - Mobile Menu Açıkken -->
@@ -98,6 +117,12 @@ window.addEventListener('scroll', function() {
             navbar.style.backgroundColor = 'rgba(4, 10, 49, 0.95)';
             navbar.style.backdropFilter = 'blur(10px)';
             navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+
+            const navLinks = navbar.querySelectorAll('nav ul li a span');
+
+            navLinks.forEach(link => {
+                link.style.color='#ffffff'
+            })
         }
     } else {
         // Navbar'ı normale döndür
@@ -111,6 +136,12 @@ window.addEventListener('scroll', function() {
             navbar.style.backgroundColor = '';
             navbar.style.backdropFilter = '';
             navbar.style.boxShadow = '';
+
+            const navLinks = navbar.querySelectorAll('nav ul li a span');
+            
+                        navLinks.forEach(link => {
+                link.style.color='#1e293b'
+            })
         }
     }
 });
