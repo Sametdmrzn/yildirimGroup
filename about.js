@@ -2,19 +2,20 @@ export function loadAbout() {
     const aboutHTML = `
 <section id="about" class="py-16 md:py-24 bg-gray-100 relative scroll-mt-20 md:scroll-mt-24">
     <!-- Sol Kenar Resmi -->
-    <div class="absolute left-0 top-0 bottom-0 w-28 md:w-36 lg:w-44 xl:w-48 hidden lg:block">
+    <div class="absolute left-0 top-0 bottom-0 w-32 md:w-48 lg:w-56 xl:w-64 hidden lg:block">
         <div class="ml-4 h-full">
             <img class="w-full h-full object-cover shadow-lg" 
-                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                 src="./assets/images/about/letf.webp" 
                  alt="Decorative">
         </div>
     </div>
 <!-- Sağ Kenar Resmi -->
-<div class="absolute right-0 top-0 bottom-0 w-28 md:w-36 lg:w-44 xl:w-48 hidden lg:block">
+<div class="absolute right-0 top-0 bottom-0 w-32 md:w-48 lg:w-56 xl:w-64 hidden lg:block">
     <div class="mr-4 h-full">
-        <img class="w-full h-full object-cover shadow-lg" 
-             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
-             alt="Decorative">
+<img class="w-full h-full object-cover shadow-lg" 
+     style="object-position: 48% center;"
+     src="./assets/images/about/right.webp" 
+     alt="Decorative">
     </div>
 </div>
     <div class="max-w-7xl mx-auto px-6 md:px-12">
