@@ -2,7 +2,7 @@
 export function loadHeader() {
    const headerHTML = `
 <header id="header" class="relative flex flex-wrap w-full h-[650px] bg-[#040a31] bg-cover bg-center content-start justify-between px-4 md:px-0  scroll-mt-20 md:scroll-mt-24" 
-style="background-image: url('relaseassets/bg.jpg');">
+style="background-image: url('relaseassets/bg.jpg');background-position: 20% center">
     
     <!-- Üst Satır: Logo ve Navigasyon -->
 <div id="navbar" class="flex w-full items-center justify-between transition-all duration-500 ease-in-out fixed top-0 left-0 right-0 z-[1000] bg-[rgba(4,10,49,0.95)] ">
