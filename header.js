@@ -20,7 +20,7 @@ style="background-image: url('relaseassets/bg.jpg');">
             <span class="hamburger-line block w-5 h-[2px] bg-white transition-all duration-300 origin-center"></span>
         </button>
         
-<nav id="menu" class="fixed md:static top-0 right-0 h-screen md:h-auto w-full max-w-sm md:w-auto bg-gradient-to-br from-[#040a31] to-[#0a1654] md:bg-transparent transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 md:mr-8 lg:mr-12 shadow-2xl md:shadow-none">
+<nav id="menu" class="fixed md:static top-0 right-0 h-screen md:h-auto w-[350px] max-w-sm md:w-auto bg-gradient-to-br from-[#040a31] to-[#0a1654] md:bg-transparent transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-40 md:mr-8 lg:mr-12 shadow-2xl md:shadow-none">
 
     <ul class="flex flex-col md:flex-row items-stretch md:items-center gap-2 md:gap-1 text-white md:text-white text-base md:text-sm lg:text-base font-medium pt-24 md:pt-0 px-6 md:px-0 pb-8 md:pb-0">
         
